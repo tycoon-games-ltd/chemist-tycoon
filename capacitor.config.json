@@ -1,5 +1,5 @@
 {
-  "appId": "com.subhanjan.chemisttycoon",
+  "appId": "com.tycoon.chemisttycoon",
   "appName": "Chemist Tycoon",
   "webDir": "www",
   "server": { "androidScheme": "https" },

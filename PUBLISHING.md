@@ -24,7 +24,7 @@ Both stores need a public URL. Put `docs/privacy.html` on GitHub Pages: reposito
 Turn on Play App Signing when asked.
 
 ## iOS
-1. Join the Apple Developer Program. In App Store Connect create the app with bundle ID `com.subhanjan.chemisttycoon`.
+1. Join the Apple Developer Program. In App Store Connect create the app with bundle ID `com.tycoon.chemisttycoon`.
 2. On a Mac: `npm install`, `npx cap add ios`, `npx capacitor-assets generate --ios`, `npx cap sync ios`, `npx cap open ios`.
 3. In Xcode choose the App target > Signing and Capabilities > your Team, tick Automatically manage signing. Set the version to 1.0 and build to 1.
 4. Choose Any iOS Device (arm64), then Product > Archive > Distribute App > App Store Connect > Upload.
