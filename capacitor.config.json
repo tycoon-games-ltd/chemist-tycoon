@@ -1,0 +1,7 @@
+{
+  "appId": "com.subhanjan.chemisttycoon",
+  "appName": "Chemist Tycoon",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false }
+}

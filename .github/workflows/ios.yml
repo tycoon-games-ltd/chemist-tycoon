@@ -1,0 +1,17 @@
+name: iOS build (simulator check)
+on: workflow_dispatch
+jobs:
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm install
+      - run: npx cap add ios
+      - run: npx capacitor-assets generate --ios
+      - run: npx cap sync ios
+      - name: Build for simulator (proves the project compiles)
+        run: |
+          cd ios/App
+          xcodebuild -workspace App.xcworkspace -scheme App -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build
